@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Multi-step form</title>
+  </head>
+  <body>
+    <main>
+      <section class="step-1 step">
+        <section class="steps-display">
+          <div class="step-text">
+            <div class="step-number current-step">1</div>
+
+            <div class="step-name">
+              <p class="step-num">Step 1</p>
+              <p class="step-name-text">Your info</p>
+            </div>
+          </div>
+
+          <div class="step-text">
+            <div class="step-number">2</div>
+
+            <div class="step-name">
+              <p class="step-num">Step 2</p>
+              <p class="step-name-text">Select plan</p>
+            </div>
+          </div>
+
+          <div class="step-text">
+            <div class="step-number">3</div>
+
+            <div class="step-name">
+              <p class="step-num">Step 3</p>
+              <p class="step-name-text">Add-ons</p>
+            </div>
+          </div>
+
+          <div class="step-text">
+            <div class="step-number">4</div>
+
+            <div class="step-name">
+              <p class="step-num">Step 4</p>
+              <p class="step-name-text">Summary</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="step-form-section">
+          <h1 class="step-heading">Personal Info</h1>
+          <p class="description">
+            Please provide your name, email address, and phone number.
+          </p>
+
+          <form action="">
+            <div class="input-area">
+              <div class="label-area">
+                <p class="label">Name</p>
+                <p class="error-msg-name">This field is required</p>
+              </div>
+              <input type="text" placeholder="e.g. Stephen King" id="name" />
+            </div>
+
+            <div class="input-area">
+              <div class="other-label-area">
+                <p class="label">Email Address</p>
+                <p class="error-msg-email">This field is required</p>
+              </div>
+
+              <input
+                type="email"
+                placeholder="e.g. stephenking@lorem.com"
+                id="email"
+              />
+            </div>
+
+            <div class="input-area">
+              <div class="other-label-area">
+                <p class="label">Phone Number</p>
+                <p class="error-msg-number">This field is required</p>
+              </div>
+              <input type="text" placeholder="e.g. 1234567890" id="phone" />
+            </div>
+
+            <section class="step-button-area step-1-button-area">
+              <button class="next-step-btn step-1-btn" type="submit">
+                Next Step
+              </button>
+            </section>
+          </form>
+        </section>
+      </section>
+
+      <section class="step-2 step">
+        <section class="steps-display">
+          <div class="step-text">
+            <div class="step-number">1</div>
+
+            <div class="step-name">
+              <p class="step-num">Step 1</p>
+              <p class="step-name-text">Your info</p>
+            </div>
+          </div>
+
+          <div class="step-text">
+            <div class="step-number current-step">2</div>
+
+            <div class="step-name">
+              <p class="step-num">Step 2</p>
+              <p class="step-name-text">Select plan</p>
+            </div>
+          </div>
+
+          <div class="step-text">
+            <div class="step-number">3</div>
+
+            <div class="step-name">
+              <p class="step-num">Step 3</p>
+              <p class="step-name-text">Add-ons</p>
+            </div>
+          </div>
+
+          <div class="step-text">
+            <div class="step-number">4</div>
+
+            <div class="step-name">
+              <p class="step-num">Step 4</p>
+              <p class="step-name-text">Summary</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="step-form-section">
+          <section class="step-text-section">
+            <h1 class="step-heading">Select your plan</h1>
+            <p class="description">
+              You have the option of monthly or yearly billing.
+            </p>
+
+            <section class="step-2-option-section">
+              <div class="step-2-option option-clicked">
+                <img src="./assets/images/icon-arcade.svg" alt="" />
+                <div class="option-text">
+                  <h2 class="planName">Arcade</h2>
+                  <p class="price arcade-price">
+                    $<span class="price-amt">9</span>/mo
+                  </p>
+                  <p class="feature">2 months free</p>
+                </div>
+              </div>
+
+              <div class="step-2-option">
+                <img src="./assets/images/icon-advanced.svg" alt="" />
+                <div class="option-text">
+                  <h2 class="planName">Advanced</h2>
+                  <p class="price advanced-price">
+                    $<span class="price-amt">12</span>/mo
+                  </p>
+                  <p class="feature">2 months free</p>
+                </div>
+              </div>
+
+              <div class="step-2-option">
+                <img src="./assets/images/icon-pro.svg" alt="" />
+                <div class="option-text">
+                  <h2 class="planName">Pro</h2>
+                  <p class="price pro-price">
+                    $<span class="price-amt">15</span>/mo
+                  </p>
+                  <p class="feature">2 months free</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="toggle-section">
+              <p class="toggle-monthly bold">Monthly</p>
+              <div class="toggle-area">
+                <div class="toggle-circle"></div>
+              </div>
+              <p class="toggle-yearly">Yearly</p>
+            </section>
+          </section>
+
+          <section class="step-button-area step-2-button-area">
+            <button class="go-back-btn">Go Back</button>
+            <button class="next-step-btn step-2-btn">Next Step</button>
+          </section>
+        </section>
+      </section>
+
+      <section class="step-3 step">
+        <section class="steps-display">
+          <div class="step-text">
+            <div class="step-number">1</div>
+
+            <div class="step-name">
+              <p class="step-num">Step 1</p>
+              <p class="step-name-text">Your info</p>
+            </div>
+          </div>
+
+          <div class="step-text">
+            <div class="step-number">2</div>
+
+            <div class="step-name">
+              <p class="step-num">Step 2</p>
+              <p class="step-name-text">Select plan</p>
+            </div>
+          </div>
+
+          <div class="step-text">
+            <div class="step-number current-step">3</div>
+
+            <div class="step-name">
+              <p class="step-num">Step 3</p>
+              <p class="step-name-text">Add-ons</p>
+            </div>
+          </div>
+
+          <div class="step-text">
+            <div class="step-number">4</div>
+
+            <div class="step-name">
+              <p class="step-num">Step 4</p>
+              <p class="step-name-text">Summary</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="step-form-section">
+          <section class="step-text-section">
+            <h1 class="step-heading">Pick add-ons</h1>
+            <p class="description">
+              Add-ons help enhance your gaming experience.
+            </p>
+
+            <section class="step-3-option-section">
+              <div class="step-3-option">
+                <div class="left-section">
+                  <div class="click-option"></div>
+
+                  <div class="add-on-text">
+                    <p class="add-on">Online Service</p>
+                    <p class="add-on-description">
+                      Access to multiplayer games
+                    </p>
+                  </div>
+                </div>
+
+                <div class="price-section">
+                  <p>+$<span class="add-on-price">1</span>/mo</p>
+                </div>
+              </div>
+
+              <div class="step-3-option">
+                <div class="left-section">
+                  <div class="click-option"></div>
+
+                  <div class="add-on-text">
+                    <p class="add-on">Larger storage</p>
+                    <p class="add-on-description">Extra 1TB of cloud save</p>
+                  </div>
+                </div>
+
+                <div class="price-section">
+                  <p>+$<span class="add-on-price">2</span>/mo</p>
+                </div>
+              </div>
+
+              <div class="step-3-option">
+                <div class="left-section">
+                  <div class="click-option"></div>
+
+                  <div class="add-on-text">
+                    <p class="add-on">Customizable Profile</p>
+                    <p class="add-on-description">
+                      Custom theme on your profile
+                    </p>
+                  </div>
+                </div>
+
+                <div class="price-section">
+                  <p>+$<span class="add-on-price">2</span>/mo</p>
+                </div>
+              </div>
+            </section>
+          </section>
+
+          <section class="step-button-area step-2-button-area">
+            <button class="go-back-btn">Go Back</button>
+            <button class="next-step-btn step-3-btn">Next Step</button>
+          </section>
+        </section>
+      </section>
+
+      <section class="step-4 step">
+        <section class="steps-display">
+          <div class="step-text">
+            <div class="step-number">1</div>
+
+            <div class="step-name">
+              <p class="step-num">Step 1</p>
+              <p class="step-name-text">Your info</p>
+            </div>
+          </div>
+
+          <div class="step-text">
+            <div class="step-number">2</div>
+
+            <div class="step-name">
+              <p class="step-num">Step 2</p>
+              <p class="step-name-text">Select plan</p>
+            </div>
+          </div>
+
+          <div class="step-text">
+            <div class="step-number">3</div>
+
+            <div class="step-name">
+              <p class="step-num">Step 3</p>
+              <p class="step-name-text">Add-ons</p>
+            </div>
+          </div>
+
+          <div class="step-text">
+            <div class="step-number current-step">4</div>
+
+            <div class="step-name">
+              <p class="step-num">Step 4</p>
+              <p class="step-name-text">Summary</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="step-form-section">
+          <section class="step-text-section">
+            <h1 class="step-heading">Finishing up</h1>
+            <p class="description">
+              Double-check everything looks OK before confirming.
+            </p>
+
+            <section class="bill-section">
+              <div class="selected-plan">
+                <div class="final-plan-text-section">
+                  <p class="final-plan-text"></p>
+                  <a href="#" class="change-plan">Change</a>
+                </div>
+                <p class="selected-plan-price"></p>
+              </div>
+
+              <hr class="divider" />
+
+              <section class="selected-add-on-section"></section>
+            </section>
+
+            <div class="total-price-section">
+              <p class="total-text"></p>
+              <p class="total-price"></p>
+            </div>
+          </section>
+
+          <section class="step-button-area step-2-button-area">
+            <button class="go-back-btn">Go Back</button>
+            <button class="next-step-btn confirm-btn step-4-btn">
+              Confirm
+            </button>
+          </section>
+        </section>
+      </section>
+
+      <section class="step-5 step">
+        <section class="steps-display step-5-display">
+          <div class="step-text">
+            <div class="step-number">1</div>
+
+            <div class="step-name">
+              <p class="step-num">Step 1</p>
+              <p class="step-name-text">Your info</p>
+            </div>
+          </div>
+
+          <div class="step-text">
+            <div class="step-number">2</div>
+
+            <div class="step-name">
+              <p class="step-num">Step 2</p>
+              <p class="step-name-text">Select plan</p>
+            </div>
+          </div>
+
+          <div class="step-text">
+            <div class="step-number">3</div>
+
+            <div class="step-name">
+              <p class="step-num">Step 3</p>
+              <p class="step-name-text">Add-ons</p>
+            </div>
+          </div>
+
+          <div class="step-text">
+            <div class="step-number current-step">4</div>
+
+            <div class="step-name">
+              <p class="step-num">Step 4</p>
+              <p class="step-name-text">Summary</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="step-form-section step-5-text-section">
+          <img src="./assets/images/icon-thank-you.svg" alt="" />
+          <h1 class="step-heading">Thank You!</h1>
+          <p class="description">
+            Thanks for confirming your subscription! We hope you have fun using
+            our platform. If you ever need support, please feel free to email us
+            at support@loremgaming.com.
+          </p>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
